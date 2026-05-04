@@ -10,6 +10,7 @@ public class Main {
 		Addition sum = new Addition();
 		Subtraction sub = new Subtraction();
 		Multiplication multi = new Multiplication();
+		Division divide = new Division();
 		
 		double number1 = 11;
 		double number2 = 3;
@@ -39,6 +40,14 @@ public class Main {
 			break;
 			
 		case 4:
+			
+			if(number2 == 0) {
+				System.out.println("Error. Cannot divide by zero.");
+			}else {
+				
+				result = divide.division(number1, number2);
+				System.out.printf("Division result: %.2f ", result);
+			}
 			break;
 		}
 		scanner.close();
