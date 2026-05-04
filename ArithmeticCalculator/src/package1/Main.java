@@ -9,6 +9,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		Addition sum = new Addition();
 		Subtraction sub = new Subtraction();
+		Multiplication multi = new Multiplication();
 		
 		double number1 = 11;
 		double number2 = 3;
@@ -33,12 +34,14 @@ public class Main {
 			break;
 			
 		case 3:
+			result = multi.multiply(number1, number2);
+			System.out.println("Multiplication result: " + result);
 			break;
 			
 		case 4:
 			break;
 		}
-		
+		scanner.close();
 		
 		
 
